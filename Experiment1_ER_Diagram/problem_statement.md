@@ -22,26 +22,35 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 - Payments tracked for memberships and sessions.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_fitness.png)
+
+
+<img width="1536" height="1024" alt="City fitness er" src="https://github.com/user-attachments/assets/7fd46971-4ab7-4ebd-b500-17ba7391bc8e" />
+
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+Entities with the corresponding Attribute:
+
+1.Member - MemberID (PK) 
+Other attribute : age,gender,address,phone, email,DOB,joinDate.
+
+2. Membership plan - PlanID (PK)
+other attribute : planName , description , Fee .
+
+3. Trainer - TrainerID (PK)
+otehr attribute : name , age, email , phone , specialization
+
+4. Payment - PaymentID (PK)
+other attributes : paymentDate , amount , ReceiptNo.
+
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+| Relationship | Cardinality | Participation |
+|--------------|-------------|---------------|
+| Enrolls      |  N : 1      |  Partial      | 
+| Attends      |  1 : 1      |  Partial      |
+| Payment      |  N : N      |  Partial      |
 
 ### Assumptions
 - 
@@ -64,33 +73,40 @@ The Central Library wants to manage book lending and cultural events.
 - Overdue fines apply for late returns.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_library.png)
+
+
+<img width="1536" height="1024" alt="Book copy" src="https://github.com/user-attachments/assets/3edfaceb-bbac-4cde-b39e-0b151f2c93fb" />
+
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+1. Member – MemberID (PK)
+
+Other attributes: FirstName, LastName, DateOfBirth (DOB), Gender, Phone, Email, JoinDate, Address, Age.
+
+2. Book – BookID (PK)
+
+Other attributes: Title, ISBN, Edition, Publisher, PublishYear, Language.
+
+3. Book Copy – CopyID (PK)
+
+Other attributes: Barcode, Status, ShelfLocation, AcquisitionDate.
+
+4. Author – AuthorID (PK)
+
+Other attributes: AuthorName, Nationality, DateOfBirth, Email.
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+| Relationship  | Cardinality | Participation |
+| ------------- | ----------- | ------------- |
+| Borrows       | 1 : N       | Partial       |
+| Reserves      | 1 : N       | Partial       |
+| Registers_For | N : N       | Partial       |
+| Has           | 1 : N       | Total         |
+| Written_By    | N : 1       | Total         |
+| Belongs_To    | N : 1       | Total         |
 
-### Assumptions
-- 
-- 
-- 
-
----
 
 # Scenario C: Restaurant Table Reservation & Ordering
 
@@ -106,33 +122,40 @@ A popular restaurant wants to manage reservations, orders, and billing.
 - Waiters assigned to serve reservations.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_restaurant.png)
+
+
+<img width="1536" height="1024" alt="RESTAURANT" src="https://github.com/user-attachments/assets/06eed925-b276-4e0b-b0dc-98a21dd845ed" />
+
+
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-|--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+1. Member – MemberID (PK)
+Other attributes: FirstName, LastName, DateOfBirth (DOB), Gender, Phone, Email, JoinDate, Address, Age.
+
+2. Book – BookID (PK)
+Other attributes: Title, ISBN, Edition, Publisher, PublishYear, Language.
+
+3. Book Copy – CopyID (PK)
+Other attributes: Barcode, Status, DueDate.
+
+4. Author – AuthorID (PK)
+Other attributes: AuthorName, Nationality, DateOfBirth, Email.
+
+5. Category – CategoryID (PK)
+Other attributes: CategoryName, Description.
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+| Relationship  | Cardinality | Participation |
+| ------------- | ----------- | ------------- |
+| Borrows       | 1 : N       | Partial       |
+| Reserves      | 1 : N       | Partial       |
+| Registers_For | N : N       | Partial       |
+| Has           | 1 : N       | Total         |
+
 
 ### Assumptions
-- 
-- 
-- 
-
----
 
 ## Instructions for Students
 
