@@ -281,5 +281,11 @@ CREATE TABLE Products(
 
 <img width="1227" height="847" alt="image" src="https://github.com/user-attachments/assets/1bf6027e-831b-4057-bbb2-89e6a3d724d6" />
 
+
+**Grade:**
+
+<img width="1388" height="136" alt="image" src="https://github.com/user-attachments/assets/ccc43888-b2ce-437f-ad09-4e996be76065" />
+
+
 ## RESULT
 Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
