@@ -41,6 +41,7 @@ HAVING condition;
 
 <img width="1196" height="643" alt="image" src="https://github.com/user-attachments/assets/3512fec7-3830-48b3-81b5-4e3251969eac" />
 
+## SQL QUERY :
 ```
 SELECT InsuranceCompany , Count(PatientID) as TotalExpiredPatients
 FROM Insurance
@@ -57,6 +58,7 @@ Group by InsuranceCompany;
 ---
 <img width="1184" height="460" alt="image" src="https://github.com/user-attachments/assets/6818389d-244c-4456-8667-5f54ae761c19" />
 
+## SQL QUERY :
 ```
 SELECT SUBSTR(Email,INSTR(Email,'@')+1) AS EmailDomain, count(*) AS TotalPatients
 FROM Patients
@@ -71,6 +73,7 @@ group by EmailDomain;
 ---
 <img width="1078" height="482" alt="image" src="https://github.com/user-attachments/assets/109d89b8-4dc3-4f12-b4f8-7bcd4bfdd34d" />
 
+## SQL QUERY :
 ```
 SELECT Address, COUNT(PatientID) AS TotalPatients
 from Patients
@@ -86,6 +89,7 @@ GROUP BY Address;
 
 <img width="939" height="505" alt="image" src="https://github.com/user-attachments/assets/8f0d0d50-e67e-4e60-8a11-79324f0654ee" />
 
+## SQL QUERY :
 ```
 Select count(*) as COUNT
 FROM customer;
@@ -99,6 +103,7 @@ FROM customer;
 ---
 <img width="906" height="479" alt="image" src="https://github.com/user-attachments/assets/1783f58e-effb-4494-8c0e-07c0ae96a52b" />
 
+## SQL QUERY :
 ```
 SELECT AVG(LENGTH(name)) as avg_name_length
 from customer
@@ -114,8 +119,8 @@ WHERE city ='Chennai';
 ---
 <img width="1080" height="516" alt="image" src="https://github.com/user-attachments/assets/7d3cda86-68e9-4fbd-bb71-6034af91dc36" />
 
-
-```sql
+## SQL QUERY :
+```
 select count(distinct salesman_id) as COUNT
 from orders;
 ```
@@ -129,7 +134,7 @@ from orders;
 ---
 <img width="1039" height="505" alt="image" src="https://github.com/user-attachments/assets/c9fb7211-754f-436c-b54b-2ed706b757da" />
 
-
+## SQL QUERY :
 ```
 select count(customer_id) as COUNT
 from customer
@@ -145,7 +150,7 @@ where grade >1;
 ---
 <img width="1236" height="530" alt="image" src="https://github.com/user-attachments/assets/fbd066d9-e0ae-46ee-a2ec-230c60c64da3" />
 
-
+## SQL QUERY :
 ```
 select age , income as Income
 from employee
@@ -162,7 +167,7 @@ having min(income) < 1000000;
 ---
 <img width="1219" height="493" alt="image" src="https://github.com/user-attachments/assets/d5a6f7c8-54dd-4cb7-af81-21f972a19b65" />
 
-
+## SQL QUERY :
 ```
 select age , avg(income) AS 'AVG(income)'
 from employee
@@ -179,7 +184,7 @@ having AVG(income) between 300000 and 500000;
 ---
 <img width="1204" height="552" alt="image" src="https://github.com/user-attachments/assets/3b833be9-9711-4ab9-b190-5494c285584b" />
 
-
+## SQL QUERY :
 ```
 select occupation, sum(workhour) as 'SUM(workhour)'
 from employee1
